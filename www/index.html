@@ -23,22 +23,149 @@
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.1.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <title>Golden Bee</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-                <p>  金蜜蜂 </p>
+        <div  data-role="page" id="homepage">
+          <div data-role="header">
+            <input type="search" name="search-mini" id="search-mini" value="" data-mini="true"/>
+            <a href="#personalcenter" data-role="button" class="ui-btn-right" data-icon="user">我</a>
+          </div>
+
+          <div data-role="content">
+            <div id="readreports">
+              <h2> 我要读报告</h2>
             </div>
+            <div id="reportsblock" class="ui-grid-b">
+              <div class="ui-block-a row1">Intel  </div>
+              <div class="ui-block-b row1">IBM  </div>
+              <div class="ui-block-c row1">CPCC  </div>
+              <div class="ui-block-a row2">Lenovo  </div>
+              <div class="ui-block-b row2">CMCC  </div> 
+              <div class="ui-block-c morediv">
+                <a id="more" href="#reportsindex" data-role="button" data-mini="true"> More... </a> 
+              </div>
+            </div>
+            <div id="csrnews">
+              <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>CSR新闻</h2>
+              </a>
+            </div>
+
+             <div id="csrexamples">
+              <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>CSR案例集</h2>
+              </a>
+            </div>
+            
+            <div id="latestnews">
+              <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>最新动态</h2>
+              </a>
+            </div>
+            
+             <div id="csrtrain">
+              <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <h2>CSR培训</h2>
+              </a>
+            </div>
+          </div> <!-- end of content -->
+          
+          <div data-role="panel" id="personalcenter" data-position="right" data-display="overlay">
+          <!--   
+          <a href="#homepage" data-rel="close" data-role="button" class="ui-btn-left" data-icon="arrow-l" data-iconpos="notext">返回</a> -->
+            <ul data-role="listview">
+              <li><a href="#">我的收藏</a></li>
+              <li><a href="#">我的银行卡</a></li>
+              <li><a href="#">关于金蜜蜂</a></li>
+              <li><a href="#">帮助</a></li>
+            </ul>
+            <fieldset>
+              <div data-role="fieldcontain">
+                <span id="offline">离线下载:</span>    
+                <input type="checkbox" id="checkbox-based-flipswitch" data-role="flipswitch">
+              </div>
+            </fieldset>
+          </div> <!-- end of panel -->
+
+        </div> <!-- end of homepage -->
+
+        <div data-role="page" id="reportsindex">
+          <div data-role="header">
+            <a href="#homepage" data-role="button" class="ui-btn-left" data-icon="arrow-l" data-iconpos="notext">返回</a>
+            <h1>我要读报告</h1>
+            <a href="#" data-role="button" class="ui-btn-right" data-icon="search" data-iconpos="notext">搜索</a>
+          </div>
+
+          <div data-role="content">
+            <input type="search" name="search" id="search-basic" value=""/>
+
+            <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+              <li class="ui-li-static ui-body-inherit ui-first-child">
+                <h3>Stephen Weber</h3>
+                <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+              </li>
+              <li class="ui-li-static ui-body-inherit ui-last-child">
+                <h3>jQuery Team</h3>
+                <p><strong>Boston Conference Planning</strong></p>                                    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <p class="ui-li-aside"><strong>9:18</strong>AM</p>                                    </li>
+            </ul>
+
+            <ul id="reportslist" data-role="listview" data-theme="a" data-divider-theme="a" class="ui-listview ui-group-theme-a">
+              <li> 
+                <a href="#reportexample" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>Stephen Weber</h3>
+                  <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                  <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                  <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                </a>
+              </li>
+              <li>
+                <a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>jQuery Team</h3>
+                  <p><strong>Boston Conference Planning</strong></p>
+                  <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                  <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+                </a>
+              </li>
+              <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-li-has-count">Thursday, October 7, 2010 <span class="ui-li-count ui-body-inherit">1</span></li>
+              <li>
+                <a href="index.html" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>Avery Walker</h3>
+                  <p><strong>Re: Dinner Tonight</strong></p>
+                  <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait! </p>
+                  <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+               </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- end of reports index -->
+
+        <div data-role="page" id="reportexample">
+          <div data-role="header">
+            <a href="#reportsindex" data-role="button" class="ui-btn-left" data-icon="arrow-l" data-iconpos="notext">返回</a>
+            <h1>Intel CSR Report</h1>
+            <a href="#" data-role="button" class="ui-btn-right" data-icon="star" data-iconpos="notext">收藏</a>  
+          </div>
+
+          <div id="reportentries" data-role="content">
+            <div class="ui-grid-a">
+              <div class="ui-block-a erow1">股东</div>
+              <div class="ui-block-b erow1">员工</div>
+              <div class="ui-block-a erow2">客户</div>
+              <div class="ui-block-b erow2">环境与社区</div>
+              <div class="ui-block-a erow3">政府</div>
+              <div class="ui-block-b erow3">报告下载/更多</div>
+            </div>
+          </div>
         </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.1.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>

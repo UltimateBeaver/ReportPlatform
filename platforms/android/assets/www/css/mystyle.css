@@ -1,0 +1,12 @@
+.ui-input-search .ui-input-has-clear .ui-body-inherit .ui-corner-all {
+  width: 50%;
+  margin-left: 20%;
+}
+
+p.event  {
+  font-color: red;
+}
+
+a.ui-btn-right{
+  font-color: red;
+}
