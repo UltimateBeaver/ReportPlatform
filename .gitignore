@@ -1,2 +1,25 @@
-/platforms/android/local.properties
-/platforms/android/CordovaLib/local.properties
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files - android project subfolder
+Android/bin/
+Android/gen/
+Android/assets/
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Thumbnails
+._*
+

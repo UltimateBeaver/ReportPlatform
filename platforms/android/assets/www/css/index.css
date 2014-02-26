@@ -3,6 +3,10 @@
   background-image:url("img/111-user.png");
 }
 
+img{
+  max-width: 400px;
+}
+
 #readreports{
   text-align:center;
   background-color: #e67e22;
