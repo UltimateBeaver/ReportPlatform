@@ -24,8 +24,10 @@
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/res \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/spec \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/spec.html \
+/Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/css/index.css \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/css/jquery.mobile-1.4.1.css \
-/Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/css/mystyle.css \
+/Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/img/111-user.png \
+/Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/img/112-group.png \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/img/logo.png \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/js/jquery.js \
 /Users/Beaver/Development/ReportPlatform/platforms/android/assets/www/js/jquery.mobile-1.4.1.min.js \
