@@ -34,25 +34,39 @@
             <a href="#personalcenter" data-role="button" class="ui-btn-right" data-icon="user" data-iconpos="notext">我</a>
           </div>
 
+          <div data-role="panel" id="personalcenter" data-position="right" data-display="overlay">
+            <ul data-role="listview">
+              <li><a href="#">我的收藏</a></li>
+              <li><a href="#">我的银行卡</a></li>
+              <li><a href="#">关于金蜜蜂</a></li>
+              <li><a href="#">帮助</a></li>
+            </ul>
+            <fieldset>
+              <div data-role="fieldcontain">
+                <span id="offline">离线下载:</span>    
+                <input type="checkbox" id="checkbox-based-flipswitch" data-role="flipswitch">
+              </div>
+            </fieldset>
+          </div>
+ 
           <div data-role="content">
             <input type="search" name="search" id="search-basic" value=""/>
-            
-            <img src="img/cover.jpg">
+            <a href="#lenovoreport" data-transition="slide">
+              <img src="img/cover.jpg">
+            </a>
             <ul id="reportslist" data-role="listview" data-theme="a" data-divider-theme="a" class="ui-listview ui-group-theme-a">
               <li> 
-                <a href="#reportexample" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-                  <h3>Stephen Weber</h3>
-                  <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                  <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                  <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                <a href="#lenovoreport" class="ui-btn ui-btn-icon-right ui-icon-carat-r" data-transition="slide">
+                    <img src="img/lenovo.jpg">
+                  <h3>Lenovo</h3>
+                  <p><strong>企业社会责任报告2011/12</strong></p>
                 </a>
               </li>
               <li>
                 <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-                  <h3>jQuery Team</h3>
-                  <p><strong>Boston Conference Planning</strong></p>
-                  <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                  <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+                    <img src="img/benz.jpg">
+                  <h3>戴姆勒-中国</h3>
+                  <p><strong>2012可持续发展报告</strong></p>
                 </a>
               </li>
               <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-li-has-count">Thursday, October 7, 2010 <span class="ui-li-count ui-body-inherit">1</span></li>
@@ -90,57 +104,105 @@
               </li>
  
             </ul>
-
+            
           </div> <!-- end of content-->
-
-          <div data-role="panel" id="personalcenter" data-position="right" data-display="overlay">
-          <!--   
-          <a href="#homepage" data-rel="close" data-role="button" class="ui-btn-left" data-icon="arrow-l" data-iconpos="notext">返回</a> -->
-            <ul data-role="listview">
-              <li><a href="#">我的收藏</a></li>
-              <li><a href="#">我的银行卡</a></li>
-              <li><a href="#">关于金蜜蜂</a></li>
-              <li><a href="#">帮助</a></li>
-            </ul>
-            <fieldset>
-              <div data-role="fieldcontain">
-                <span id="offline">离线下载:</span>    
-                <input type="checkbox" id="checkbox-based-flipswitch" data-role="flipswitch">
-              </div>
-            </fieldset>
-          </div> <!-- end of panel -->
           
-          <div data-role="footer" data-id="main" data-position="fixed">
-            <div data-role="navbar">
+           <div data-role="footer" data-id="main" data-position="fixed">
+            <div data-role="navbar" class="ui-body-b">
               <ul>
-                <li><a href="#" class="ui-btn-active ui-state-persist">报告</a></li>
-                <li><a href="#">新闻</a></li>
-                <li><a href="#">案例集</a></li>
-                <li><a href="#">动态</a></li>
-                <li><a href="#">培训</a></li>
+                <li><a href="#reportsindex" id="footer-reports" data-icon="custom" class="ui-btn-active ui-state-persist ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                    报告</a></li>
+                <li><a href="#" id="footer-news" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                    新闻</a></li>
+                <li><a href="#" id="footer-cases" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                    案例集</a></li>
+                <li><a href="#" id="footer-dynamic" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                    动态</a></li>
+                <li><a href="#" id="footer-train" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                    培训</a></li>
               </ul>
             </div>
           </div> <!-- end of footer -->
+          
         </div> <!-- end of reports index -->
 
-        <div data-role="page" id="reportexample">
-          <div data-role="header">
+        <div data-role="page" id="lenovoreport" data-fullscreen="true">
+          <div data-role="header" data-position="fixed">
             <a href="#reportsindex" data-role="button" class="ui-btn-left" data-icon="arrow-l" data-iconpos="notext">返回</a>
-            <h1>Intel CSR Report</h1>
+            <h1>联想CSR报告</h1>
             <a href="#" data-role="button" class="ui-btn-right" data-icon="star" data-iconpos="notext">收藏</a>  
           </div>
 
           <div id="reportentries" data-role="content">
-            <div class="ui-grid-a">
-              <div class="ui-block-a erow1">股东</div>
-              <div class="ui-block-b erow1">员工</div>
-              <div class="ui-block-a erow2">客户</div>
-              <div class="ui-block-b erow2">环境与社区</div>
-              <div class="ui-block-a erow3">政府</div>
-              <div class="ui-block-b erow3">报告下载/更多</div>
-            </div>
-          </div>
-        </div>
+            <img src="img/cover.jpg">
+             <ul id="lenovoindex" data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+              <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>高管致辞</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>合伙人</h3>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>环境</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>客户</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>社会</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>投资者</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>员工</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>CSR管理</h3>
+                </a> 
+              </li>
+               <li>
+                <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h3>CSR战略</h3>
+                </a> 
+              </li>
+
+             </ul> 
+          </div> <!-- end of content -->
+
+            <div data-role="footer" data-id="main" data-position="fixed">
+                <div data-role="navbar" class="ui-body-b">
+                    <ul>
+                        <li><a href="#reportsindex" id="footer-reports" data-icon="custom" class="ui-btn-active ui-state-persist ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                            报告</a></li>
+                        <li><a href="#" id="footer-news" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                            新闻</a></li>
+                        <li><a href="#" id="footer-cases" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                            案例集</a></li>
+                        <li><a href="#" id="footer-dynamic" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                            动态</a></li>
+                        <li><a href="#" id="footer-train" data-icon="custom" class="ui-link ui-btn ui-icon-custom ui-btn-icon-top">
+                            培训</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end of footer -->
+        </div> <!-- end of lenovoreport -->
+
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.1.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>

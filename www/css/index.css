@@ -1,19 +1,5 @@
-
-.ui-icon-user{
-  background-image:url("img/111-user.png");
-}
-
 img{
   max-width: 400px;
-}
-
-#readreports{
-  text-align:center;
-  background-color: #e67e22;
-  color: white;
-  height: 80px;
-  opacity: 0.8;
-  padding-top: 8px;
 }
 
 .ui-content{
@@ -33,34 +19,37 @@ img{
   margin: 0;
 }
 
+#lenovoindex {
+  margin: 0;
+}
+
 #reportentries {
   text-align: center;
 }
 
-.erow1 {
-  height:150px;
-  padding-top: 60px;
-  border-bottom: 1px solid #eaeaea;
-  border-right: 1px solid #eaeaea;
-  background-color: rgb(238, 62, 168);
-  color: white;
+/* footer icon */
+
+#footer-reports:after {
+  background-image:url("../img/96-book.png");
+  background-size: 14px 14px;
 }
 
-.erow2 {
-  height:150px;
-  padding-top: 60px;
-  border-bottom: 1px solid #eaeaea;
-  border-right: 1px solid #eaeaea;
-  background-color: rgb(0, 187, 136);
-color: white;
+#footer-news:after {
+  background-image:url("../img/179-notepad.png");
+  background-size: 14px 14px;
 }
 
-.erow3 {
-  height:150px;
-  padding-top: 60px;
-  border-bottom: 1px solid #eaeaea;
-  border-right: 1px solid #eaeaea;
-  background-color: rgb(0, 136, 221);
-color: white;
+#footer-cases:after {
+  background-image:url("../img/191-collection.png");
+  background-size: 14px 14px;
 }
 
+#footer-dynamic:after {
+  background-image:url("../img/77-ekg.png");
+  background-size: 14px 14px;
+}
+
+#footer-train:after {
+  background-image:url("../img/46-movie-2.png");
+  background-size: 14px 14px;
+}
